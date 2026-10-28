@@ -1,0 +1,9 @@
+{
+  "name": "limits-meter",
+  "version": "0.9.1",
+  "description": "Your Claude 5-hour and weekly usage limits, this session\u2019s context window, and the model with its effort, above the prompt in every session, with /limits and threshold alerts",
+  "author": {
+    "name": "Luis Benavides"
+  },
+  "types": "./types/index.d.ts"
+}

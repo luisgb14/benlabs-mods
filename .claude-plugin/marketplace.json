@@ -1,0 +1,24 @@
+{
+  "name": "benlabs-mods",
+  "owner": {
+    "name": "Luis Benavides"
+  },
+  "description": "Claude Code mods: usage limits, kube/AWS/git context, and a live subagents pane",
+  "plugins": [
+    {
+      "name": "limits-meter",
+      "source": "./limits-meter",
+      "description": "Live meter of your Claude 5-hour and weekly usage limits above the prompt"
+    },
+    {
+      "name": "where-am-i",
+      "source": "./where-am-i",
+      "description": "Kube context, AWS profile with SSO time left, and git branch above the prompt, red when anything points at production"
+    },
+    {
+      "name": "subagents",
+      "source": "./subagents",
+      "description": "Live pane of each subagent as a colored card with its status and latest tool calls"
+    }
+  ]
+}

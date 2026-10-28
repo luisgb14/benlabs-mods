@@ -1,0 +1,9 @@
+{
+  "name": "where-am-i",
+  "version": "0.5.1",
+  "description": "Kube context and namespace, AWS profile with SSO time left, and git branch with your prompt\u2019s marks above the prompt, on limits-meter\u2019s columns; a red banner when anything points at production",
+  "author": {
+    "name": "Luis Benavides"
+  },
+  "types": "./types/index.d.ts"
+}

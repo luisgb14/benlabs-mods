@@ -1,0 +1,9 @@
+{
+  "name": "subagents",
+  "version": "0.3.0",
+  "description": "Live pane of each subagent as a colored card: status, call count, and a strip of its tool calls with the latest one",
+  "author": {
+    "name": "Luis Benavides"
+  },
+  "types": "./types/index.d.ts"
+}
