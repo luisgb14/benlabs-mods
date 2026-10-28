@@ -15,31 +15,7 @@ subagents.
 
 ## How it fits together
 
-```mermaid
-%%{init: {"theme": "base", "themeVariables": {"background": "#282c34", "primaryColor": "#2c313a", "primaryTextColor": "#abb2bf", "primaryBorderColor": "#61afef", "lineColor": "#5c6370", "secondaryColor": "#2c313a", "tertiaryColor": "#21252b", "clusterBkg": "#21252b", "clusterBorder": "#3e4451", "fontFamily": "JetBrains Mono, monospace"}}}%%
-flowchart LR
-  subgraph sources[What they read]
-    usage[Claude usage and context]
-    kube[~/.kube/config]
-    aws[~/.aws config and SSO cache]
-    git[git status]
-    agents[subagent starts and tool calls]
-  end
-  subgraph mods[benlabs-mods]
-    limits[limits-meter]
-    where[where-am-i]
-    sub[subagents]
-  end
-  subgraph cc[Claude Code: terminal and desktop]
-    band[Band above the prompt]
-    pane[Side pane]
-  end
-  usage --> limits --> band
-  kube --> where
-  aws --> where
-  git --> where --> band
-  agents --> sub --> pane
-```
+![What each mod reads and where Claude Code draws it](assets/diagram.png)
 
 The bands stack above the prompt, limits-meter's over where-am-i's, on the
 same three columns. In a narrow pane each meter takes a row of its own:
@@ -104,4 +80,5 @@ claude plugin test subagents
 
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE). The Kubernetes, AWS, git and Claude logos in the diagram come from
+[Simple Icons](https://simpleicons.org) (CC0) and belong to their owners.
